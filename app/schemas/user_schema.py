@@ -11,3 +11,7 @@ class UserRegister(BaseModel):
     curp: str | None
     birth_date: date | None
     role_id: int
+    
+class UserLogin(BaseModel):
+    email: EmailStr
+    password: str
