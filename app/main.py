@@ -1,23 +1,19 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.database.connection import engine
-from app.database.base import Base
-from app.database.init_db import init_db
-from app.routers import auth_router
+from app.rutas import auth_ruta, solicitud_ruta
 
 app = FastAPI(
     title = "BackendAFAEM",
     version = "1.0.0"
 )
 
-init_db()
-Base.metadata.create_all(bind=engine)
-
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
         "http://192.168.0.172:3000",
+        "http://localhost:5173",
+        "http://192.168.0.172:5173",
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -25,7 +21,8 @@ app.add_middleware(
 
 )
 
-app.include_router(auth_router.router)
+app.include_router(auth_ruta.router)
+app.include_router(solicitud_ruta.router)
 
 @app.get("/")
 def health_check():
