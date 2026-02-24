@@ -1,5 +1,6 @@
 from sqlalchemy.orm import sessionmaker
-from app.database.connection import engine
+from app.db.conexion import engine
+from fastapi import Depends
 
 SessionLocal = sessionmaker(
     autocommit=False,
