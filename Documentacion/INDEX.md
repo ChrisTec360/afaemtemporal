@@ -1,103 +1,114 @@
 # Indice Maestro de Documentación
 
-## Manual de Bienvenida
+## Empezar Aquí
 
-Este es el archivo de índice que te guía a través de toda la documentación del proyecto AFAEM.
+Documentación esencial para entender el proyecto AFAEM:
 
-## Documentación General
+### Para Nuevos Desarrolladores
+1. [26_INICIO_RAPIDO.md](26_INICIO_RAPIDO.md) - Guía paso a paso para configurar todo
+2. [19_ARQUITECTURA_GENERAL.md](19_ARQUITECTURA_GENERAL.md) - Visión general del proyecto
+3. [README_PROYECTO.md](README_PROYECTO.md) - Descripción del proyecto
 
-### Conceptos Generales
+---
 
-- [README_PROYECTO.md](README_PROYECTO.md) - Descripción general del proyecto y estructura
-- [01_README_Principal.md](01_README_Principal.md) - Información principal del proyecto
+## Documentación por Capas
 
-### Configuración
-
-- [SETUP_Backend.txt](SETUP_Backend.txt) - Instrucciones para configurar el backend
-- [11_React_Vite_Config.md](11_React_Vite_Config.md) - Configuración de React y Vite
+### Backend (FastAPI)
+- [20_BACKEND_ESTRUCTURA.md](20_BACKEND_ESTRUCTURA.md) - Estructura completa del backend, capas, rutas, servicios y modelos
+- [22_FLUJO_AUTENTICACION.md](22_FLUJO_AUTENTICACION.md) - Explicación detallada del flujo de login/registro
+- [24_ENDPOINTS_API.md](24_ENDPOINTS_API.md) - Referencia completa de todos los endpoints
+- [23_MODELOS_DATOS.md](23_MODELOS_DATOS.md) - Estructura de base de datos y modelos SQLAlchemy
 - [14_Alembic_Migraciones.md](14_Alembic_Migraciones.md) - Sistema de migraciones de base de datos
 
-### Dependencias
+### Frontend (React + Vite)
+- [21_FRONTEND_ESTRUCTURA.md](21_FRONTEND_ESTRUCTURA.md) - Estructura del frontend, componentes, páginas y servicios
+- [25_COMPONENTES_REUTILIZABLES.md](25_COMPONENTES_REUTILIZABLES.md) - 8 componentes Partial Views disponibles
+- [11_React_Vite_Config.md](11_React_Vite_Config.md) - Configuración de React y Vite
 
-- [requirements_principal.txt](requirements_principal.txt) - Dependencias del proyecto principal
-- [requirements_backend.txt](requirements_backend.txt) - Dependencias del backend
+---
 
-## Características del Proyecto
+## Referencia Rápida
 
-### Dashboard y UI
+### Empezar a Desarrollar
+- [26_INICIO_RAPIDO.md](26_INICIO_RAPIDO.md) - Paso a paso para levantar el proyecto
 
+### Crear Nueva Funcionalidad
+1. Lee [20_BACKEND_ESTRUCTURA.md](20_BACKEND_ESTRUCTURA.md) para backend
+2. Lee [21_FRONTEND_ESTRUCTURA.md](21_FRONTEND_ESTRUCTURA.md) para frontend
+3. Consulta [24_ENDPOINTS_API.md](24_ENDPOINTS_API.md) para ver endpoints disponibles
+4. Usa [25_COMPONENTES_REUTILIZABLES.md](25_COMPONENTES_REUTILIZABLES.md) para UI
+
+### Agregar Base de Datos
+- [23_MODELOS_DATOS.md](23_MODELOS_DATOS.md) - Cómo crear nuevos modelos
+- [14_Alembic_Migraciones.md](14_Alembic_Migraciones.md) - Cómo crear migraciones
+
+### Entender Autenticación
+- [22_FLUJO_AUTENTICACION.md](22_FLUJO_AUTENTICACION.md) - Flujo completo de JWT
+
+---
+
+## Documentación Adicional (Original)
+
+### Configuración
+- [SETUP_Backend.txt](SETUP_Backend.txt) - Instrucciones para configurar el backend
+- [requirements_principal.txt](requirements_principal.txt) - Dependencias principales
+- [requirements_backend.txt](requirements_backend.txt) - Dependencias backend
+
+### Características del Proyecto
 - [02_Integracion_Dashboard.md](02_Integracion_Dashboard.md) - Integración del dashboard premium
 - [08_Partial_Views_Guia.md](08_Partial_Views_Guia.md) - Guía de componentes reutilizables
-- [09_Quick_Start_Partials.md](09_Quick_Start_Partials.md) - Inicio rápido con componentes
-- [11_Partial_Views_Completo.md](11_Partial_Views_Completo.md) - Documentación técnica completa
-- [10_Status_Sistema.md](10_Status_Sistema.md) - Estado del sistema de partial views
-- [12_Partial_Views_Status_Completo.md](12_Partial_Views_Status_Completo.md) - Estado detallado
-
-### API y Endpoints
-
-- [07_Endpoint_Solicitudes.md](07_Endpoint_Solicitudes.md) - Documentación del endpoint de solicitudes
-- [04_Cambios_Realizados.md](04_Cambios_Realizados.md) - Cambios técnicos realizados
+- [11_Partial_Views_Completo.md](11_Partial_Views_Completo.md) - Documentación técnica
+- [07_Endpoint_Solicitudes.md](07_Endpoint_Solicitudes.md) - Endpoints de solicitudes
 
 ### Problemas Resueltos
-
-- [03_Solucion_Fecha_Nacimiento.md](03_Solucion_Fecha_Nacimiento.md) - Solución del problema de fecha de nacimiento
-
-## Debugging y Solución de Problemas
-
-### Guías de Debugging
-
-- [05_Debugging_Fecha.md](05_Debugging_Fecha.md) - Guía de debugging para fechas
+- [03_Solucion_Fecha_Nacimiento.md](03_Solucion_Fecha_Nacimiento.md) - Solución de fechas
+- [05_Debugging_Fecha.md](05_Debugging_Fecha.md) - Debugging de fechas
 - [06_Debugging_Avanzado.md](06_Debugging_Avanzado.md) - Debugging avanzado
 - [13_Debug_Mejoras_Validaciones.md](13_Debug_Mejoras_Validaciones.md) - Mejoras y validaciones
-- [16_DEBUG_FECHA_Original.md](16_DEBUG_FECHA_Original.md) - Debugging de fechas (versión original limpia)
-- [17_DEBUGGING_FECHA_Original.md](17_DEBUGGING_FECHA_Original.md) - Debugging avanzado de fechas (versión original limpia)
 
-### Archivos Adicionales Importantes
+### Versiones Limpias de Documentos Originales
+- [15_DASHBOARD_INTEGRATION_Original.md](15_DASHBOARD_INTEGRATION_Original.md) - Dashboard (limpio)
+- [16_DEBUG_FECHA_Original.md](16_DEBUG_FECHA_Original.md) - Debug de fechas (limpio)
+- [17_DEBUGGING_FECHA_Original.md](17_DEBUGGING_FECHA_Original.md) - Debugging avanzado (limpio)
+- [18_ENDPOINT_SOLICITUDES_Original.md](18_ENDPOINT_SOLICITUDES_Original.md) - Endpoints (limpio)
 
-- [15_DASHBOARD_INTEGRATION_Original.md](15_DASHBOARD_INTEGRATION_Original.md) - Integración de dashboard (versión original limpia)
-- [18_ENDPOINT_SOLICITUDES_Original.md](18_ENDPOINT_SOLICITUDES_Original.md) - Endpoints de solicitudes (versión original limpia)
+---
 
-## Navegación Rápida
+## Tabla de Contenidos Completa
 
-### Si quieres conocer el proyecto...
-1. Lee [README_PROYECTO.md](README_PROYECTO.md)
-2. Revisa [01_README_Principal.md](01_README_Principal.md)
-
-### Si quieres configurar todo...
-1. Ve a [SETUP_Backend.txt](SETUP_Backend.txt)
-2. Luego [11_React_Vite_Config.md](11_React_Vite_Config.md)
-
-### Si quieres entender el dashboard...
-1. Lee [02_Integracion_Dashboard.md](02_Integracion_Dashboard.md)
-2. Aprende componentes: [08_Partial_Views_Guia.md](08_Partial_Views_Guia.md)
-3. Inicio rápido: [09_Quick_Start_Partials.md](09_Quick_Start_Partials.md)
-
-### Si tienes problemas con fechas...
-1. Solución: [03_Solucion_Fecha_Nacimiento.md](03_Solucion_Fecha_Nacimiento.md)
-2. Debugging: [05_Debugging_Fecha.md](05_Debugging_Fecha.md)
-3. Más info: [06_Debugging_Avanzado.md](06_Debugging_Avanzado.md)
-
-### Si quieres usar la API...
-1. Lee [07_Endpoint_Solicitudes.md](07_Endpoint_Solicitudes.md)
-
-### Si quieres expandir con datos...
-1. Entiende [14_Alembic_Migraciones.md](14_Alembic_Migraciones.md)
-
-## Archivos en Esta Carpeta
-
-| Archivo | Propósito |
-|---------|-----------|
-| README_PROYECTO.md | Descripción general |
-| 01_README_Principal.md | Info principal |
-| 02_Integracion_Dashboard.md | Dashboard |
-| 03_Solucion_Fecha_Nacimiento.md | Solución de fechas |
-| 04_Cambios_Realizados.md | Cambios técnicos |
-| 05_Debugging_Fecha.md | Debugging de fechas |
-| 06_Debugging_Avanzado.md | Debugging avanzado |
-| 07_Endpoint_Solicitudes.md | API endpoints |
-| 08_Partial_Views_Guia.md | Componentes reusables |
-| 09_Quick_Start_Partials.md | Inicio rápido |
-| 10_Status_Sistema.md | Estado del sistema |
+| # | Archivo | Tipo | Descripción |
+|---|---------|------|-------------|
+| 19 | ARQUITECTURA_GENERAL.md | Core | Visión general y comunicación sistema |
+| 20 | BACKEND_ESTRUCTURA.md | Core | Estructura del backend FastAPI |
+| 21 | FRONTEND_ESTRUCTURA.md | Core | Estructura del frontend React |
+| 22 | FLUJO_AUTENTICACION.md | Core | Autenticación JWT explicada |
+| 23 | MODELOS_DATOS.md | Core | Base de datos y modelos |
+| 24 | ENDPOINTS_API.md | Core | Referencia de endpoints REST |
+| 25 | COMPONENTES_REUTILIZABLES.md | Core | 8 componentes Partial Views |
+| 26 | INICIO_RAPIDO.md | Core | Guía paso a paso |
+| - | README_PROYECTO.md | Info | Descripción general |
+| 01 | README_Principal.md | Info | Info principal |
+| 02 | Integracion_Dashboard.md | Feature | Dashboard premium |
+| 03 | Solucion_Fecha_Nacimiento.md | Solution | Solución de fechas |
+| 04 | Cambios_Realizados.md | Info | Cambios técnicos |
+| 05 | Debugging_Fecha.md | Debug | Debugging de fechas |
+| 06 | Debugging_Avanzado.md | Debug | Debugging avanzado |
+| 07 | Endpoint_Solicitudes.md | Reference | Endpoints de solicitudes |
+| 08 | Partial_Views_Guia.md | Reference | Componentes reusables |
+| 09 | Quick_Start_Partials.md | Guide | Inicio rápido componentes |
+| 10 | Status_Sistema.md | Info | Estado del sistema |
+| 11 | Partial_Views_Completo.md | Reference | Documentación técnica |
+| 12 | Partial_Views_Status_Completo.md | Info | Estado detallado |
+| 13 | Debug_Mejoras_Validaciones.md | Debug | Mejoras y validaciones |
+| 11 | React_Vite_Config.md | Config | Configuración React/Vite |
+| 14 | Alembic_Migraciones.md | Reference | Migraciones de base de datos |
+| 15 | DASHBOARD_INTEGRATION_Original.md | Reference | Dashboard (limpio) |
+| 16 | DEBUG_FECHA_Original.md | Debug | Debug de fechas (limpio) |
+| 17 | DEBUGGING_FECHA_Original.md | Debug | Debugging avanzado (limpio) |
+| 18 | ENDPOINT_SOLICITUDES_Original.md | Reference | Endpoints (limpio) |
+| - | SETUP_Backend.txt | Config | Setup del backend |
+| - | requirements_principal.txt | Config | Dependencias |
+| - | requirements_backend.txt | Config | Dependencias backend |
 | 11_React_Vite_Config.md | React config |
 | 11_Partial_Views_Completo.md | Componentes técnico |
 | 12_Partial_Views_Status_Completo.md | Estado de componentes |
