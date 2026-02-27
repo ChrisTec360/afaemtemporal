@@ -14,3 +14,6 @@ def crear_solicitudrepo(db: Session, solicitud: Solicitud, usuario: Usuario):
     db.commit()
     db.refresh(solicitud)
     return solicitud
+
+def obtener_solicitudes_repo(db: Session):
+    return db.query(Solicitud).all()

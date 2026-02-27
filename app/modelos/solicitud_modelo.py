@@ -2,7 +2,6 @@ from sqlalchemy import Column, Integer, String, CHAR, Date, DateTime, Boolean, F
 from sqlalchemy.orm import relationship
 from app.db.base import Base
 
-
 class Solicitud(Base):
     __tablename__ = "Solicitudes"
     SolicitudId = Column(Integer, primary_key=True)

@@ -13,12 +13,12 @@ router = APIRouter(prefix="/solicitud",tags=["Solicitud"])
 
 @router.post("/enviar-solicitud")
 def solicitud(data: SolicitudCrear, db:Session = Depends(get_db),usuario: Usuario = Depends(obtener_usuario_actual)):
-    
+
     crear_solicitud(db, data, usuario)
     
     if not data:
         raise HTTPException(status_code=400, detail="Datos de solicitud inválidos")
-    
+
     return {"message": "Solicitud enviada correctamente"}
 
 

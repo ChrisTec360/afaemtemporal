@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 from app.modelos.solicitud_modelo import Solicitud
 from app.modelos.usuario_modelo import Usuario
-from app.repositorios.solicitud_repositorio import crear_solicitudrepo
+from app.repositorios import solicitud_repositorio
 from app.core.seguridad import obtener_usuario_actual
 
 def crear_solicitud(db: Session, data, usuario):
@@ -21,7 +21,7 @@ def crear_solicitud(db: Session, data, usuario):
         FechaNacimiento=data.FechaNacimiento
     )
 
-    return crear_solicitudrepo(db, solicitud, usuario)
+    return solicitud_repositorio.crear_solicitudrepo(db, solicitud, usuario)
 
 def obtener_solicitudes_servicio(db: Session):
-    return db.query(Solicitud).all()
+    return solicitud_repositorio.obtener_solicitudes_repo(db)
