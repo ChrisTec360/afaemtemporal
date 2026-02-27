@@ -1,0 +1,65 @@
+Ver Documentacion
+
+IMPORTANTE: La documentación del proyecto ha sido centralizada en la carpeta "Documentacion" 
+en la raíz del proyecto.
+
+Los archivos que estaban aquí han sido trasladados para mejor organización:
+
+- DASHBOARD_INTEGRATION.md => Documentacion/02_Integracion_Dashboard.md
+- DEBUGGING_FECHA.md => Documentacion/05_Debugging_Fecha.md
+- DEBUG_FECHA.md => Documentacion/06_Debugging_Avanzado.md
+- ENDPOINT_SOLICITUDES.md => Documentacion/07_Endpoint_Solicitudes.md
+- RESUMEN_CAMBIOS.md => Documentacion/04_Cambios_Realizados.md
+- SOLUCION_FECHA_NACIMIENTO.md => Documentacion/03_Solucion_Fecha_Nacimiento.md
+
+INCLUYE TAMBIÉN:
+
+- README.md (Frontend) => Este archivo sigue aquí
+- backend/README.md => Información del backend
+- src/components/partials/README.md => Documentación de componentes
+- src/components/partials/QUICK_START.md => Guía rápida de componentes
+- src/components/partials/STATUS.md => Estado del sistema de componentes
+
+¿Dónde Está Toda la Documentación?
+
+Navega a la carpeta "Documentacion" en la raíz del proyecto:
+c:\Users\emili\OneDrive\Escritorio\AFAEM\afaemtemporal\Documentacion\
+
+Archivos Importantes en Documentacion/
+
+- INDEX.md - Índice maestro de toda la documentación
+- README_PROYECTO.md - Descripción general del proyecto
+- 01_README_Principal.md - Información principal
+- 02_Integracion_Dashboard.md - Dashboard
+- 03_Solucion_Fecha_Nacimiento.md - Soluciones
+- 04_Cambios_Realizados.md - Cambios técnicos
+- 05_Debugging_Fecha.md - Debugging básico
+- 06_Debugging_Avanzado.md - Debugging avanzado
+- 07_Endpoint_Solicitudes.md - API endpoints
+- 08_Partial_Views_Guia.md - Componentes reutilizables
+- 09_Quick_Start_Partials.md - Inicio rápido
+- 10_Status_Sistema.md - Estado del sistema
+- 11_React_Vite_Config.md - Configuración React
+- 11_Partial_Views_Completo.md - Componentes técnico
+- 12_Partial_Views_Status_Completo.md - Estado de componentes
+- 13_Debug_Mejoras_Validaciones.md - Debugging mejorado
+- 14_Alembic_Migraciones.md - Migraciones de base de datos
+- requirements_principal.txt - Dependencias
+- requirements_backend.txt - Dependencias backend
+- SETUP_Backend.txt - Instrucciones de setup
+
+¿Por qué se movió la documentación?
+
+1. Mejor organización del proyecto
+2. Documentación centralizada en un solo lugar
+3. Más fácil de encontrar y mantener
+4. Lenguaje limpio sin emojis
+5. Explicaciones más accesibles
+
+¿Qué sigue?
+
+1. Lee Documentacion/INDEX.md para orientarte
+2. Consulta Documentacion/README_PROYECTO.md para detalles
+3. Usa la documentación según necesites
+
+¡La documentación está lista para usar!
